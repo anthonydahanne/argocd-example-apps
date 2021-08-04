@@ -2,8 +2,8 @@
 apiVersion: getambassador.io/v2
 kind: Mapping
 metadata:
-  name: guestbook
-  namespace: ambassador
+  name: guestbook-ui
+  namespace: default
 spec:
-  prefix: /
-  service: guestbook-ui
+  prefix: /guestbook-ui/
+  service: guestbook-ui:80
